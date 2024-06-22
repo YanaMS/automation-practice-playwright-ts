@@ -1,5 +1,25 @@
 import { test, expect } from '@playwright/test';
 
+function oddEvenCheck (input: number){
+  if (input % 2 == 0){
+    console.log('The number is even.')
+  } else {
+    console.log('The number is odd.')
+  }}
+
+  test("is positive", async () => {
+    const result = oddEvenCheck(1);
+    expect(result).toBeTruthy();
+  });
+  
+
+
+
+
+
+
+
+
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
